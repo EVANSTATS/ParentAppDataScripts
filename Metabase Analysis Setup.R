@@ -435,6 +435,7 @@ data_hp_started <- c("rp.contact.field.w_1on1_hp_review_started",  "rp.contact.f
                      "rp.contact.field.w_consequence_hp_review_started",  "rp.contact.field.w_solve_hp_review_started",  "rp.contact.field.w_safe_hp_review_started",
                      "rp.contact.field.w_crisis_hp_review_started")
 
+
 plhdata_org_clean <- plhdata_org_clean %>%
   dplyr::mutate(rp.contact.field.w_stress_hp_done = ifelse(rp.contact.field.w_stress_hp_talk_done == "yes" & 
                                                              rp.contact.field.w_stress_hp_breathe_done == "yes",
